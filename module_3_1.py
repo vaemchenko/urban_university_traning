@@ -31,16 +31,16 @@ def is_contains(string, list_to_search):
     count_call()
     for i in list_to_search:
          if string.lower() == i.lower():
-           return True
-    else:
-        return False
+             return True
+    return False
+
 
 
 print(string_info('Conducktor'))
 print(string_info('Armavir'))
-print(is_contains('street', ['1', '2', 'st', 'allo']))
+print(is_contains('street', ['1', '2', 'st', 'allo', 'StreT']))
 print(is_contains('Urban', ['ban', 'BaNaN', 'urBAN']))
-
+print(is_contains('MOSCOW', ['Piter', 'MoscOW', 'lonDon', 'urBAN', 'SPB']))
 print(calls)
 
 
